@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For a special someone</title>
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chewy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <style>
+      :root {
+        --primary-100: #ffe4ec;
+        --primary-200: #ffcce0;
+        --primary-300: #ffb3d1;
+        --primary-400: #ff99c2;
+        --primary-500: #ff80b4;
+        --primary-600: #ff66a3;
+        --primary-700: #ff4d94;
+        --primary-800: #e6397f;
+        --primary-900: #cc296b;
+        --secondary-100: #e6faf5;
+        --secondary-200: #ccf5eb;
+        --secondary-300: #b3efe0;
+        --secondary-400: #99e9d6;
+        --secondary-500: #80e3cc;
+        --secondary-600: #66d9bf;
+        --secondary-700: #4dcfb2;
+        --secondary-800: #33c4a6;
+        --secondary-900: #1ab897;
+      }
+
+      * {
+        font-family: "Chewy";
+      }
+
+      .name {
+        font-family: "Poppins" !important;
+        line-height: 1 !important;
+        color: var(--primary-500);
+      }
+
+      .fullname {
+        text-shadow: 2px 2px 0px rgba(255, 185, 213, 0.75);
+        letter-spacing: 2px;
+      }
+
+      .desc-start {
+        font-family: "Poppins" !important;
+      }
+
+      .vid {
+        filter: brightness(0.5);
+      }
+
+      .btn-exp {
+        background-color: white;
+        color: var(--primary-500);
+        box-shadow: 4px 4px 0px 0px rgba(255, 128, 180, 1);
+        -webkit-box-shadow: 4px 4px 0px 0px rgba(255, 128, 180, 1);
+        -moz-box-shadow: 4px 4px 0px 0px rgba(255, 128, 180, 1);
+        transition: 0.2s ease-in-out;
+      }
+      .btn-exp:hover,
+      .btn-exp:active {
+        background-color: var(--primary-500);
+        color: white;
+        box-shadow: 4px 4px 0px 0px rgba(255, 255, 255, 1);
+        -webkit-box-shadow: 4px 4px 0px 0px rgba(255, 255, 255, 1);
+        -moz-box-shadow: 4px 4px 0px 0px rgba(255, 255, 255, 1);
+      }
+
+      @media screen and (min-width: 768px) {
+        .content-hero {
+          width: 50% !important;
+        }
+
+        h1 {
+          font-size: 60px !important;
+          font-weight: 700 !important;
+          line-height: 1.2 !important;
+        }
+
+        h2 {
+          font-size: 48px !important; /* 60 ÷ 1.25 */
+          font-weight: 600 !important;
+          line-height: 1.3 !important;
+        }
+
+        h3 {
+          font-size: 38px !important; /* 48 ÷ 1.25 */
+          font-weight: 600 !important;
+          line-height: 1.3 !important;
+        }
+
+        h4 {
+          font-size: 30px !important; /* 38 ÷ 1.25 */
+          font-weight: 500 !important;
+          line-height: 1.4 !important;
+        }
+
+        h5 {
+          font-size: 24px !important; /* 30 ÷ 1.25 */
+          font-weight: 500 !important;
+          line-height: 1.4 !important;
+        }
+
+        h6 {
+          font-size: 20px !important; /* 24 ÷ 1.2 */
+          font-weight: 500 !important;
+          line-height: 1.5 !important;
+        }
+      }
+    </style>
+    <div class="w-100 overflow-hidden position-relative" style="height: 100vh">
+      <!-- VIDEO -->
+      <div
+        class="w-100 h-100 overflow-hidden d-flex justify-content-center align-items-center"
+      >
+        <video
+          class="vid"
+          src="my-baby.mp4"
+          class="w-100"
+          autoplay
+          loop
+          muted
+        ></video>
+      </div>
+
+      <!-- TEXT -->
+      <div
+        class="position-absolute pb-5 d-flex justify-content-start align-items-end top-50 start-50 translate-middle text-center text-white"
+        style="z-index: 10; height: 100vh; width: 100%"
+      >
+        <!-- LEFT SIDE -->
+        <div class="content-hero w-100 justify-content-start p-5">
+          <div class="text-start"><h1 class="fw-bold name">Hello, Amy</h1></div>
+          <div class="text-start">
+            <h4 class="fullname" style="font-family: 'Chewy'">
+              Amyllah Fadhllynah Binti Nur Amin
+            </h4>
+          </div>
+          <div class="desc-start mt-1 text-start">
+            You’re my morning coffee, my late night comfort, and my permanent
+            playlist on repeat. Basically, you’re the reason my heart has no
+            ‘pause’ button.
+          </div>
+          <div class="mt-5 text-start">
+            <a
+              class="btn-exp text-decoration-none px-4 py-3 rounded-2"
+              href="second.html"
+              >Explore more <i class="fa-solid fa-heart"></i></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
